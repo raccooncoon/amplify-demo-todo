@@ -1,6 +1,9 @@
+import { Amplify } from 'aws-amplify';
+import awsExports from './src/aws-exports';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+Amplify.configure(awsExports);
 export default function App() {
   return (
     <View style={styles.container}>
